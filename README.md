@@ -15,14 +15,24 @@ The purpose is to learn the maximum possible parts of OpenLane
    then run ```yosys```
    
 ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/8838e909-e668-4a30-a826-1caf1dbab28c)
-4. run steps ```read_verilog inverter.v``` followed by ```proc``` then ```opt``` ending with ```write_verilog synth.v```
 
+4. run steps ```read_verilog inverter.v``` followed by ```proc``` then ```opt``` ending with ```write_verilog synth.v```
+5. 
 ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/c3c0d719-4c90-4c0e-b1b9-ccb59778fcf3)
+
 Exit yosys and analyze synth.v file
+
 ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/947c3825-8f26-4b3b-915c-fda50159628a)
-5. Check with json file, whether there is any differnece.
-![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/b7ea6e56-90b5-402d-bd7c-5e574b9ac9ae)
-It is evident that yosys has generated exact same files for both the conditions. Hence config.json is not related to yosys. Care should be taken that yosys maybe different than synthesis part in Openlane.
-6. Next we will analyze by writing different modelling style. Following is the conclusion
+
+<details>
+ <summary> Analysing : This did not make sense. I will keep this for future.</summary>
+
+6. Check with json file, whether there is any differnece.  It is evident that yosys has generated exact same files for both the conditions. Hence config.json is not related to yosys. Care should be taken that yosys maybe different than synthesis part in Openlane.
+7. Next we will analyze by writing different modelling style. Following is the conclusion
+
 ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/d3c90e12-06f0-49f0-bd52-32121b4439de)
-Somehow we ended with same synthesis!
+
+Somehow we ended with same synthesis! 
+I had forgot techmap step. But putting techmap part didnt make any difference
+I will keep this pending for now.
+</details>
