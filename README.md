@@ -36,3 +36,19 @@ Somehow we ended with same synthesis!
 I had forgot techmap step. But putting techmap part didnt make any difference
 I will keep this pending for now.
 </details>
+
+# Learning Synthesis in OpenLane
+1. I ran ```./flow.tcl -design spm -from synthesis -to synthesis``` without config.json file. I got an error!
+
+![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/af58817d-b23c-4eb5-ab77-43d958f3e65e)
+
+ 2. After adding config.json, flow completes with results in ```/openlane/designs/inverter3/runs/RUN_2023.07.11_10.41.45/results/synthesis```
+
+![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/9c3b589f-415e-4cbd-894a-ee30e37d18b0)
+
+
+ 4. There are two files .sdf and .v as below. these are interesting and are to be understood.
+
+![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/d7c4513f-e672-4e30-ac13-1fbb16a3724d)
+
+    
