@@ -49,6 +49,17 @@ I will keep this pending for now.
 
  4. There are two files .sdf and .v as below. these are interesting and are to be understood.
 
+.sdf is standard delay format and .v is the synthesis file. the types of standard cells used from skywater can be read at [naming](https://skywater-pdk.readthedocs.io/en/main/contents/libraries.html#third-party-provided-io-and-periphery-libraries) 
+
 ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/d7c4513f-e672-4e30-ac13-1fbb16a3724d)
+
+5. Let us try editing of config.json file
+   diode_insertion_strategy is a mandatory requirement for flow to start.
+   With only this prompt, STA fails with
+
+   ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/b168a38d-4a2d-497f-b37e-2c47eaa5767b)
+
+   Adding clock_port , i.e total 4 prompts in config, the flow completes. The run results are same in terms of sdf and v files!!
+   Same with changing diode insertion strategy from 3 to 1.
 
     
