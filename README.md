@@ -61,5 +61,36 @@ I will keep this pending for now.
 
    Adding clock_port , i.e total 4 prompts in config, the flow completes. The run results are same in terms of sdf and v files!!
    Same with changing diode insertion strategy from 3 to 1.
+LEF files are generated in tmp folder. I will check these in future study.
 
-    
+    # Floorplanning
+   There is no tool name for performing this other than 'Floor Planning: init_fp, ioPlacer, pdn and tapcell' as mentioned in readthedocs
+1. The floorplan folder is empty as of now.
+2. without proper config file following error occurs.
+
+   ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/5bc22a31-29c7-42da-b428-f62993ed6227)
+
+3. Too many errors were encountered , hence skipped to running  ```./flow.tcl -design inverter3 -from synthesis -to floorplan```
+
+   ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/ca5de7ad-a495-45d3-a38c-978d47348e3d)
+
+4. All folders are empty, seems only planning is done. Results/reports are unavialble.
+   i checked log files which are mentioned in above figure. Interesting data are there!!! Endcaps, tie cells, PDN, BUMP Pitches etc................. Let us study these later.
+
+   ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/8e6d6248-e445-4a8b-b111-c5a392ab5f23)
+
+# Placement
+
+1. ```./flow.tcl -design inverter3 -from synthesis -to placement```
+generates
+
+![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/a07135c2-ab62-4a1b-9b8a-f18bd6180fa4)
+
+2. After running placement, results folder for floorplan contains 2 files, def file and odb file. let us study later.
+
+   
+3. BAck to placement. Four files as seen in below figure are seen in the results of placement. def files is more detailed version of def file in floorplan.
+   nl.v file seems like a netlist file.
+
+   ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/8a53389e-ac65-4da4-b590-0d437d241477)
+
