@@ -94,3 +94,19 @@ generates
 
    ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/8a53389e-ac65-4da4-b590-0d437d241477)
 
+pnl.v seems like power netlist file. As it includes power lines too.
+
+4. Some logs observed are
+   ```cat designs/inverter3/runs/RUN_2023.07.12_11.04.39/logs/placement/7-global.log```
+   gives
+![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/fe4ff166-78ce-4c8c-a343-9fa5c39c8f2a)
+
+```cat designs/inverter3/runs/RUN_2023.07.12_11.04.39/logs/placement/8-resizer.log``` 
+gives slack reports for everythig, setup, hold etc etc
+
+![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/93f04d87-163c-422d-8bea-2b362b86a194)
+
+
+   ```designs/inverter3/runs/RUN_2023.07.12_11.04.39/logs/placement/9-detailed.log```
+
+
