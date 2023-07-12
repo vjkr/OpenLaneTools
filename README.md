@@ -109,4 +109,4 @@ gives slack reports for everythig, setup, hold etc etc
 
    ```designs/inverter3/runs/RUN_2023.07.12_11.04.39/logs/placement/9-detailed.log```
 
-
+# CLOCK TREE SYNTHESIS CTS
