@@ -131,4 +131,18 @@ doesnot provide any results on terminal :(
 3. Went through all reports. too many things are in process!. Let us keep this for research.
 4.  Studied all files under results. Again interesting. Let us compare all def files using magic!!
 
-   #
+   # Tapeout
+1. too many things in tapeout! Postpone study!  ```./flow.tcl -design inverter3 -from synthesis -to tapeout```
+   ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/529c2630-5694-42b4-8499-a08a506706ae)
+
+# Signoff
+```./flow.tcl -design inverter3 -from synthesis -to signoff```
+1. too many things in signoff! Postpone study!  ```./flow.tcl -design inverter3 -from synthesis -to signoff```
+
+2. Various files in the final folder. Let us study in detail
+
+   ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/f1507dcc-0762-4341-a429-fda732d54fd5)
+
+
+   
+# LET US STUDY ALL DEF FORMATS AT VARIOUS STEPS in next repo!
