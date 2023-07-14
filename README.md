@@ -1,3 +1,4 @@
+## [openlane architecture and tools](https://openlane.readthedocs.io/en/latest/flow_overview.html)
 # OpenLaneTools
 Documenting individual open lane tools
 This repository is a continuation from another repo where OpenLane is used for running inverter
@@ -110,3 +111,24 @@ gives slack reports for everythig, setup, hold etc etc
    ```designs/inverter3/runs/RUN_2023.07.12_11.04.39/logs/placement/9-detailed.log```
 
 # CLOCK TREE SYNTHESIS CTS
+1. ```./flow.tcl -design inverter3 -from synthesis -to cts```
+doesnot provide any results on terminal :(
+
+![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/d1299e23-d512-4988-a7c4-f3e475c19ed3)
+
+2. No files in results too. Fortunately few reports are available as seen in below figure.
+
+   ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/4090abf5-6c39-493e-9850-2c4160e48880)
+
+3. Very similar reports were seen during placement. Not sure what to make of these.
+
+   # Routing
+   1. Verified that routing folder under results is empty. run ```./flow.tcl -design inverter3 -from synthesis -to routing```
+   2. Many reports are generated and few are in results of routing.
+  
+      ![image](https://github.com/vjkr/OpenLaneTools/assets/16399079/dd42c1f2-8044-41a6-b5c4-b69c90e5b670)
+
+3. Went through all reports. too many things are in process!. Let us keep this for research.
+4.  Studied all files under results. Again interesting. Let us compare all def files using magic!!
+
+   #
